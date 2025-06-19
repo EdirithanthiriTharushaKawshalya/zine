@@ -7,7 +7,14 @@ import { Camera, Phone, Mail, Clock, Star, MessageSquare, ExternalLink, Heart } 
 import { submitContactForm } from "./actions"
 import Link from "next/link"
 
-export default function ContactPage() {
+interface ContactPageProps {
+  searchParams: { success?: string; error?: string }
+}
+
+export default function ContactPage({ searchParams }: ContactPageProps) {
+  const showSuccess = searchParams.success === "true"
+  const showError = searchParams.error === "true"
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Navigation */}
@@ -66,6 +73,20 @@ export default function ContactPage() {
             <Card className="border-0 shadow-lg rounded-2xl overflow-hidden">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Book Your Session</h2>
+
+                {/* Success/Error Messages */}
+                {showSuccess && (
+                  <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-xl">
+                    Thank you for your message! We will get back to you within 24 hours.
+                  </div>
+                )}
+                {showError && (
+                  <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-xl">
+                    Sorry, there was an error sending your message. Please try again or contact us directly at
+                    lalstudio82@gmail.com
+                  </div>
+                )}
+
                 <form action={submitContactForm} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
@@ -279,7 +300,7 @@ export default function ContactPage() {
                 </span>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Professional photography and videography services capturing life&apos;s most precious moments with artistic
+                Professional photography and videography services capturing life's most precious moments with artistic
                 vision and technical excellence.
               </p>
               <div className="flex space-x-4">

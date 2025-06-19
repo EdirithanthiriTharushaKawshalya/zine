@@ -43,16 +43,11 @@ export async function submitContactForm(formData: FormData) {
     // Simulate processing time
     await new Promise((resolve) => setTimeout(resolve, 1000))
 
-    return {
-      success: true,
-      message: "Thank you for your message! We will get back to you within 24 hours.",
-    }
+    // For server actions, we should redirect or revalidate instead of returning data
+    // You can redirect to a success page or back to the contact page
+    // redirect('/contact?success=true')
   } catch (error) {
     console.error("Error sending email:", error)
-    return {
-      success: false,
-      message:
-        "Sorry, there was an error sending your message. Please try again or contact us directly at lalstudio82@gmail.com",
-    }
+    // redirect('/contact?error=true')
   }
 }
