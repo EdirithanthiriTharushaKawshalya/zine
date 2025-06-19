@@ -8,12 +8,13 @@ import { submitContactForm } from "./actions"
 import Link from "next/link"
 
 interface ContactPageProps {
-  searchParams: { success?: string; error?: string }
+  searchParams: Promise<{ success?: string; error?: string }>
 }
 
-export default function ContactPage({ searchParams }: ContactPageProps) {
-  const showSuccess = searchParams.success === "true"
-  const showError = searchParams.error === "true"
+export default async function ContactPage({ searchParams }: ContactPageProps) {
+  const params = await searchParams
+  const showSuccess = params.success === "true"
+  const showError = params.error === "true"
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
@@ -300,7 +301,7 @@ export default function ContactPage({ searchParams }: ContactPageProps) {
                 </span>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Professional photography and videography services capturing life&apos;s most precious moments with artistic
+                Professional photography and videography services capturing life's most precious moments with artistic
                 vision and technical excellence.
               </p>
               <div className="flex space-x-4">
