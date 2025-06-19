@@ -117,7 +117,7 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Expertise</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We specialize in capturing life's most important moments with artistic vision and technical excellence
+              We specialize in capturing life&apos;s most important moments with artistic vision and technical excellence
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -304,7 +304,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Don't just take our word for it - hear from our satisfied clients about their experience with LAL STUDIO
+              Don&apos;t just take our word for it - hear from our satisfied clients about their experience with LAL STUDIO
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -316,8 +316,8 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-6 leading-relaxed italic">
-                  "LAL STUDIO captured our wedding day perfectly. The attention to detail and artistic vision exceeded
-                  our expectations. We couldn't be happier with the results!"
+                  &quot;LAL STUDIO captured our wedding day perfectly. The attention to detail and artistic vision exceeded
+                  our expectations. We couldn&apos;t be happier with the results!&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
@@ -338,8 +338,8 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-6 leading-relaxed italic">
-                  "Professional, creative, and reliable. LAL STUDIO delivered exceptional corporate event coverage that
-                  perfectly represented our brand. Highly recommended!"
+                  &quot;Professional, creative, and reliable. LAL STUDIO delivered exceptional corporate event coverage that
+                  perfectly represented our brand. Highly recommended!&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
@@ -360,8 +360,8 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-6 leading-relaxed italic">
-                  "The music video LAL STUDIO created for us was beyond amazing. Their creative vision and technical
-                  expertise brought our song to life beautifully."
+                  &quot;The music video LAL STUDIO created for us was beyond amazing. Their creative vision and technical
+                  expertise brought our song to life beautifully.&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
@@ -430,7 +430,7 @@ export default function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg rounded-2xl overflow-hidden">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">What's included in your packages?</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">What&apos;s included in your packages?</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Our packages vary by service type but typically include pre-event consultation, professional
                   photography/videography, basic editing, and digital delivery. We also offer add-ons like additional
@@ -454,7 +454,7 @@ export default function HomePage() {
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Do you travel for destination events?</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Yes! We love destination weddings and events. Travel fees may apply depending on the location. We'll
+                  Yes! We love destination weddings and events. Travel fees may apply depending on the location. We&apos;ll
                   work with you to create a package that includes all necessary travel arrangements and logistics.
                 </p>
               </CardContent>
@@ -468,7 +468,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Ready to Create Something Amazing?</h2>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Let's discuss your project and bring your vision to life with our professional photography and videography
+            Let&apos;s discuss your project and bring your vision to life with our professional photography and videography
             services. Contact us today for a personalized quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -513,7 +513,7 @@ export default function HomePage() {
                 </span>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Professional photography and videography services capturing life's most precious moments with artistic
+                Professional photography and videography services capturing life&apos;s most precious moments with artistic
                 vision and technical excellence.
               </p>
               <div className="flex space-x-4">

@@ -49,7 +49,7 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              With years of experience and a passion for visual storytelling, we've been capturing life's most precious
+              With years of experience and a passion for visual storytelling, we&apos;ve been capturing life&apos;s most precious
               moments and creating stunning visual content for clients worldwide.
             </p>
           </div>
@@ -59,13 +59,13 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-gray-900">Our Story</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                LAL STUDIO was founded with a simple mission: to capture the beauty and emotion of life's most important
+                LAL STUDIO was founded with a simple mission: to capture the beauty and emotion of life&apos;s most important
                 moments. What started as a passion project has grown into a full-service photography and videography
                 studio, serving clients across various industries and occasions.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Our team combines technical expertise with artistic vision to deliver exceptional results that exceed
-                expectations. We believe every project tells a unique story, and we're here to help you tell yours in
+                expectations. We believe every project tells a unique story, and we&apos;re here to help you tell yours in
                 the most compelling way possible.
               </p>
               <div className="flex items-center space-x-4 pt-4">
@@ -176,7 +176,7 @@ export default function AboutPage() {
                 </span>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Professional photography and videography services capturing life's most precious moments with artistic
+                Professional photography and videography services capturing life&apos;s most precious moments with artistic
                 vision and technical excellence.
               </p>
               <div className="flex space-x-4">

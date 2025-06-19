@@ -194,7 +194,7 @@ export default function ServicesPage() {
           <div className="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white">
             <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
             <p className="text-xl mb-8 text-blue-100">
-              Let's discuss your project and create something amazing together
+              Let&apos;s discuss your project and create something amazing together
             </p>
             <Button
               size="lg"
@@ -218,7 +218,7 @@ export default function ServicesPage() {
                 </span>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Professional photography and videography services capturing life's most precious moments with artistic
+                Professional photography and videography services capturing life&apos;s most precious moments with artistic
                 vision and technical excellence.
               </p>
               <div className="flex space-x-4">

@@ -221,7 +221,7 @@ export default function PortfolioPage() {
                 </span>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Professional photography and videography services capturing life's most precious moments with artistic
+                Professional photography and videography services capturing life&apos;s most precious moments with artistic
                 vision and technical excellence.
               </p>
               <div className="flex space-x-4">
