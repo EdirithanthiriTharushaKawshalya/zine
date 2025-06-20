@@ -24,7 +24,7 @@ export async function submitContactForm(formData: FormData) {
   try {
     // 1. Send confirmation email to customer
     await resend.emails.send({
-      from: "STUDIO ZINE <https://zine-ten.vercel.app/>", // Replace with your domain
+      from: "STUDIO ZINE <onboarding@resend.dev>", // Fixed: Valid email format
       to: [email],
       subject: "Thank you for contacting STUDIO ZINE!",
       html: `
@@ -65,7 +65,7 @@ export async function submitContactForm(formData: FormData) {
               <strong>STUDIO ZINE Team</strong><br>
               Professional Photography & Videography<br>
               📧 contact.teamzine@gmail.com<br>
-              🌐 <a href="https://yourdomain.com">www.yourdomain.com</a>
+              🌐 <a href="https://zine-ten.vercel.app">zine-ten.vercel.app</a>
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@ export async function submitContactForm(formData: FormData) {
 
     // 2. Send notification email to studio
     await resend.emails.send({
-      from: "STUDIO ZINE Website <https://zine-ten.vercel.app/>", // Replace with your domain
+      from: "STUDIO ZINE Website <onboarding@resend.dev>", // Fixed: Valid email format
       to: ["contact.teamzine@gmail.com"],
       subject: `New ${service} Inquiry from ${firstName} ${lastName}`,
       html: `
