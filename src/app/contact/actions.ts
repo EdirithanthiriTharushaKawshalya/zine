@@ -1,9 +1,6 @@
 "use server"
 
 import { redirect } from "next/navigation"
-import { Resend } from "resend"
-
-const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function submitContactForm(formData: FormData) {
   // Extract form data
@@ -22,9 +19,13 @@ export async function submitContactForm(formData: FormData) {
   }
 
   try {
+    // Initialize Resend only at runtime, not at build time
+    const { Resend } = await import("resend")
+    const resend = new Resend(process.env.RESEND_API_KEY)
+
     // 1. Send confirmation email to customer
     await resend.emails.send({
-      from: "STUDIO ZINE <onboarding@resend.dev>", // Fixed: Valid email format
+      from: "STUDIO ZINE <onboarding@resend.dev>",
       to: [email],
       subject: "Thank you for contacting STUDIO ZINE!",
       html: `
@@ -74,7 +75,7 @@ export async function submitContactForm(formData: FormData) {
 
     // 2. Send notification email to studio
     await resend.emails.send({
-      from: "STUDIO ZINE Website <onboarding@resend.dev>", // Fixed: Valid email format
+      from: "STUDIO ZINE Website <onboarding@resend.dev>",
       to: ["contact.teamzine@gmail.com"],
       subject: `New ${service} Inquiry from ${firstName} ${lastName}`,
       html: `
