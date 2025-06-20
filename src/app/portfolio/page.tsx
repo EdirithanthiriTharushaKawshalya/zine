@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Camera, ExternalLink, Facebook, Star, Mail, Clock, Heart } from "lucide-react"
+import { ExternalLink, Facebook, Star, Mail, Clock, Heart } from "lucide-react"
 import Link from "next/link"
 
 export default function PortfolioPage() {

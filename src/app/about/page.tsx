@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Camera, Users, Award, Clock, Heart, Star, Mail } from "lucide-react"
+import { Users, Award, Clock, Heart, Star, Mail } from "lucide-react"
 import Link from "next/link"
 
 export default function AboutPage() {
@@ -21,19 +21,31 @@ export default function AboutPage() {
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              <Link
+                href="/"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
                 Home
               </Link>
               <Link href="/about" className="text-blue-600 font-medium">
                 About
               </Link>
-              <Link href="/services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              <Link
+                href="/services"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
                 Services
               </Link>
-              <Link href="/portfolio" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              <Link
+                href="/portfolio"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
                 Portfolio
               </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              <Link
+                href="/contact"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
                 Contact
               </Link>
             </div>
@@ -52,8 +64,9 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              With years of experience and a passion for visual storytelling, we&apos;ve been capturing life&apos;s most precious
-              moments and creating stunning visual content for clients worldwide.
+              With years of experience and a passion for visual storytelling,
+              we&apos;ve been capturing life&apos;s most precious moments and
+              creating stunning visual content for clients worldwide.
             </p>
           </div>
 
@@ -62,23 +75,30 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-gray-900">Our Story</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                STUDIO ZINE was founded with a simple mission: to capture the beauty and emotion of life&apos;s most important
-                moments. What started as a passion project has grown into a full-service photography and videography
-                studio, serving clients across various industries and occasions.
+                STUDIO ZINE was founded with a simple mission: to capture the
+                beauty and emotion of life&apos;s most important moments. What
+                started as a passion project has grown into a full-service
+                photography and videography studio, serving clients across
+                various industries and occasions.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Our team combines technical expertise with artistic vision to deliver exceptional results that exceed
-                expectations. We believe every project tells a unique story, and we&apos;re here to help you tell yours in
-                the most compelling way possible.
+                Our team combines technical expertise with artistic vision to
+                deliver exceptional results that exceed expectations. We believe
+                every project tells a unique story, and we&apos;re here to help
+                you tell yours in the most compelling way possible.
               </p>
               <div className="flex items-center space-x-4 pt-4">
                 <div className="flex items-center space-x-2">
                   <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  <span className="font-semibold text-gray-900">100+ Happy Clients</span>
+                  <span className="font-semibold text-gray-900">
+                    100+ Happy Clients
+                  </span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Award className="w-5 h-5 text-blue-600" />
-                  <span className="font-semibold text-gray-900">Award Winning</span>
+                  <span className="font-semibold text-gray-900">
+                    Award Winning
+                  </span>
                 </div>
               </div>
             </div>
@@ -97,17 +117,21 @@ export default function AboutPage() {
 
           {/* Values Section */}
           <div className="mb-20">
-            <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Our Values</h2>
+            <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
+              Our Values
+            </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="border-0 shadow-lg rounded-2xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-8 text-center">
                   <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Heart className="w-8 h-8 text-blue-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Passion</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Passion
+                  </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    We pour our heart into every project, ensuring each shot captures the emotion and essence of the
-                    moment.
+                    We pour our heart into every project, ensuring each shot
+                    captures the emotion and essence of the moment.
                   </p>
                 </CardContent>
               </Card>
@@ -116,10 +140,12 @@ export default function AboutPage() {
                   <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Users className="w-8 h-8 text-purple-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Collaboration</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Collaboration
+                  </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    We work closely with our clients to understand their vision and bring it to life through our
-                    expertise.
+                    We work closely with our clients to understand their vision
+                    and bring it to life through our expertise.
                   </p>
                 </CardContent>
               </Card>
@@ -128,9 +154,12 @@ export default function AboutPage() {
                   <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Clock className="w-8 h-8 text-green-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Excellence</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Excellence
+                  </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    We maintain the highest standards in every aspect of our work, from planning to final delivery.
+                    We maintain the highest standards in every aspect of our
+                    work, from planning to final delivery.
                   </p>
                 </CardContent>
               </Card>
@@ -140,9 +169,12 @@ export default function AboutPage() {
           {/* Experience Section */}
           <div className="bg-white rounded-3xl p-12 shadow-lg">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">What Sets Us Apart</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                What Sets Us Apart
+              </h2>
               <p className="text-xl text-gray-600">
-                A fresh, dynamic team with a passion for visual storytelling — driven by creativity and client satisfaction
+                A fresh, dynamic team with a passion for visual storytelling —
+                driven by creativity and client satisfaction
               </p>
             </div>
             <div className="grid md:grid-cols-4 gap-8 text-center">
@@ -152,15 +184,21 @@ export default function AboutPage() {
               </div>
               <div className="space-y-2">
                 <div className="text-4xl font-bold text-purple-600">500+</div>
-                <div className="text-gray-600 font-medium">Projects Completed</div>
+                <div className="text-gray-600 font-medium">
+                  Projects Completed
+                </div>
               </div>
               <div className="space-y-2">
                 <div className="text-4xl font-bold text-green-600">200+</div>
-                <div className="text-gray-600 font-medium">Weddings Captured</div>
+                <div className="text-gray-600 font-medium">
+                  Weddings Captured
+                </div>
               </div>
               <div className="space-y-2">
                 <div className="text-4xl font-bold text-orange-600">50+</div>
-                <div className="text-gray-600 font-medium">Corporate Clients</div>
+                <div className="text-gray-600 font-medium">
+                  Corporate Clients
+                </div>
               </div>
             </div>
           </div>
@@ -174,11 +212,11 @@ export default function AboutPage() {
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <Link href="/">
-                <img
-                  src="/Zine Logo W.png"
-                  alt="LAL Studio Logo"
-                  className="h-40 w-auto"
-                />
+                  <img
+                    src="/Zine Logo W.png"
+                    alt="LAL Studio Logo"
+                    className="h-40 w-auto"
+                  />
                 </Link>
               </div>
               <p className="text-gray-300 leading-relaxed">

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Camera, Phone, Mail, Clock, Star, MessageSquare, ExternalLink, Heart } from "lucide-react"
+import { Phone, Mail, Clock, Star, MessageSquare, ExternalLink, Heart } from "lucide-react"
 import { submitContactForm } from "./actions"
 import Link from "next/link"
 
