@@ -202,12 +202,11 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
                 <CardContent className="p-8">
                   <div className="flex items-center space-x-3 mb-4">
                     <Star className="w-8 h-8 text-yellow-300" />
-                    <h3 className="text-2xl font-bold">8+ Years of Excellence</h3>
+                    <h3 className="text-2xl font-bold">Driven by Creativity & Passion</h3>
                   </div>
                   <p className="text-blue-100 leading-relaxed">
-                    With our professional experience and 500+ successful projects, STUDIO ZINE has
-                    established itself as a trusted name in photography and videography. Our extensive portfolio spans
-                    weddings, corporate events, music videos, and commercial projects.
+                    STUDIO ZINE is a team of passionate creatives delivering professional photography, videography, and visual storytelling. 
+                    From capturing life&apos;s special moments to producing brand-focused content, we bring fresh energy and dedication to every project.
                   </p>
                 </CardContent>
               </Card>
@@ -232,7 +231,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
                       </div>
                       <div>
                         <p className="font-semibold text-gray-900">Phone</p>
-                        <p className="text-gray-600">Available upon request</p>
+                        <p className="text-gray-600">071 1998327 / 0782918452</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-4">
