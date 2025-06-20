@@ -24,13 +24,13 @@ export async function submitContactForm(formData: FormData) {
   try {
     // 1. Send confirmation email to customer
     await resend.emails.send({
-      from: "LAL STUDIO <https://zine-ten.vercel.app/>", // Replace with your domain
+      from: "STUDIO ZINE <https://zine-ten.vercel.app/>", // Replace with your domain
       to: [email],
-      subject: "Thank you for contacting LAL STUDIO!",
+      subject: "Thank you for contacting STUDIO ZINE!",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
           <div style="text-align: center; margin-bottom: 30px;">
-            <h1 style="color: #2563eb; margin: 0;">LAL STUDIO</h1>
+            <h1 style="color: #2563eb; margin: 0;">STUDIO ZINE</h1>
             <p style="color: #6b7280; margin: 5px 0;">Professional Photography & Videography</p>
           </div>
           
@@ -38,7 +38,7 @@ export async function submitContactForm(formData: FormData) {
           
           <p>Dear ${firstName},</p>
           
-          <p>Thank you for reaching out to LAL STUDIO! We have received your inquiry and are excited to learn about your ${service.toLowerCase()} project.</p>
+          <p>Thank you for reaching out to STUDIO ZINE! We have received your inquiry and are excited to learn about your ${service.toLowerCase()} project.</p>
           
           <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3 style="margin-top: 0; color: #1f2937;">Your Submission Details:</h3>
@@ -55,16 +55,16 @@ export async function submitContactForm(formData: FormData) {
             <li>We'll contact you within 24 hours to discuss your vision</li>
           </ul>
           
-          <p>If you have any urgent questions, feel free to reply to this email or contact us directly at <a href="mailto:lalstudio82@gmail.com">lalstudio82@gmail.com</a>.</p>
+          <p>If you have any urgent questions, feel free to reply to this email or contact us directly at <a href="mailto:contact.teamzine@gmail.com">contact.teamzine@gmail.com</a>.</p>
           
           <p>We look forward to capturing your special moments!</p>
           
           <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
             <p style="color: #6b7280; font-size: 14px;">
               Best regards,<br>
-              <strong>LAL STUDIO Team</strong><br>
+              <strong>STUDIO ZINE Team</strong><br>
               Professional Photography & Videography<br>
-              📧 lalstudio82@gmail.com<br>
+              📧 contact.teamzine@gmail.com<br>
               🌐 <a href="https://yourdomain.com">www.yourdomain.com</a>
             </p>
           </div>
@@ -74,8 +74,8 @@ export async function submitContactForm(formData: FormData) {
 
     // 2. Send notification email to studio
     await resend.emails.send({
-      from: "LAL STUDIO Website <https://zine-ten.vercel.app/>", // Replace with your domain
-      to: ["lalstudio82@gmail.com"],
+      from: "STUDIO ZINE Website <https://zine-ten.vercel.app/>", // Replace with your domain
+      to: ["contact.teamzine@gmail.com"],
       subject: `New ${service} Inquiry from ${firstName} ${lastName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -140,7 +140,7 @@ export async function submitContactForm(formData: FormData) {
           <div style="background-color: #ecfdf5; padding: 20px; border-radius: 8px; border-left: 4px solid #10b981;">
             <h3 style="color: #047857; margin-top: 0;">Quick Actions:</h3>
             <p style="margin-bottom: 15px;">
-              <a href="mailto:${email}?subject=Re: Your ${service} Inquiry&body=Hi ${firstName},%0D%0A%0D%0AThank you for your interest in our ${service.toLowerCase()} services. I'd love to discuss your project in more detail.%0D%0A%0D%0ABest regards,%0D%0ALAL STUDIO" 
+              <a href="mailto:${email}?subject=Re: Your ${service} Inquiry&body=Hi ${firstName},%0D%0A%0D%0AThank you for your interest in our ${service.toLowerCase()} services. I'd love to discuss your project in more detail.%0D%0A%0D%0ABest regards,%0D%0ASTUDIO ZINE" 
                  style="background-color: #10b981; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-right: 10px;">
                 📧 Reply to Client
               </a>
@@ -159,7 +159,7 @@ export async function submitContactForm(formData: FormData) {
           
           <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e2e8f0; text-align: center;">
             <p style="color: #64748b; font-size: 14px;">
-              This email was automatically generated from your LAL STUDIO website contact form.
+              This email was automatically generated from your STUDIO ZINE website contact form.
             </p>
           </div>
         </div>

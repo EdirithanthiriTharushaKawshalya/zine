@@ -72,10 +72,13 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <Camera className="h-8 w-8 text-blue-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                LAL STUDIO
-              </span>
+              <Link href="/">
+                <img
+                  src="/Logo.png"
+                  alt="STUDIO ZINE Logo"
+                  className="h-25 w-auto"
+                />
+              </Link>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
@@ -212,28 +215,36 @@ export default function ServicesPage() {
             {/* Studio Info */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <Camera className="h-8 w-8 text-blue-400" />
-                <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  LAL STUDIO
-                </span>
+                <Link href="/">
+                <img
+                  src="/Zine Logo W.png"
+                  alt="STUDIO ZINE Logo"
+                  className="h-40 w-auto"
+                />
+                </Link>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Professional photography and videography services capturing life&apos;s most precious moments with artistic
-                vision and technical excellence.
+                Professional photography and videography services capturing
+                life&apos;s most precious moments with artistic vision and
+                technical excellence.
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="https://facebook.com/lalstudio82"
+                  href="https://www.facebook.com/share/196GKDHi5j/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                   </svg>
                 </a>
                 <a
-                  href="mailto:lalstudio82@gmail.com"
+                  href="mailto:contact.teamzine@gmail.com"
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
                 >
                   <Mail className="w-5 h-5" />
@@ -246,32 +257,50 @@ export default function ServicesPage() {
               <h3 className="text-xl font-bold text-white">Our Services</h3>
               <ul className="space-y-2 text-gray-300">
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Wedding Photography
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Event Coverage
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
-                    Studio Photography
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
+                    Birthday Photography
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Music Videos
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Commercial Photography
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Graphic Design
                   </Link>
                 </li>
@@ -283,27 +312,42 @@ export default function ServicesPage() {
               <h3 className="text-xl font-bold text-white">Quick Links</h3>
               <ul className="space-y-2 text-gray-300">
                 <li>
-                  <Link href="/" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/about"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/portfolio" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/portfolio"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Portfolio
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/contact"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -316,7 +360,7 @@ export default function ServicesPage() {
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-blue-400" />
-                  <span>lalstudio82@gmail.com</span>
+                  <span>contact.teamzine@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Clock className="w-5 h-5 text-blue-400" />
@@ -325,19 +369,13 @@ export default function ServicesPage() {
                     <p>Sunday: By appointment</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Star className="w-5 h-5 text-yellow-400" />
-                  <span>8+ Years Experience</span>
-                </div>
               </div>
               <Button
                 size="sm"
                 className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-2 text-sm font-medium transition-all duration-300 hover:scale-105"
+                asChild
               >
-                <Link href="/contact" className="block w-full h-full">
-                  Book Now
-                </Link>
-
+                <Link href="/contact">Book Now</Link>
               </Button>
             </div>
           </div>
@@ -346,15 +384,22 @@ export default function ServicesPage() {
           <div className="border-t border-gray-800 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-gray-400 text-sm">
-                © 2024 LAL STUDIO. All rights reserved. | Professional Photography & Videography Services
+                © 2025 STUDIO ZINE. All rights reserved. | Professional
+                Photography & Videography Services
               </div>
               <div className="flex items-center space-x-6 text-sm text-gray-400">
-                <Link href="#" className="hover:text-blue-400 transition-colors duration-300">
+                <a
+                  href="#"
+                  className="hover:text-blue-400 transition-colors duration-300"
+                >
                   Privacy Policy
-                </Link>
-                <Link href="#" className="hover:text-blue-400 transition-colors duration-300">
+                </a>
+                <a
+                  href="#"
+                  className="hover:text-blue-400 transition-colors duration-300"
+                >
                   Terms of Service
-                </Link>
+                </a>
                 <span className="flex items-center space-x-1">
                   <Heart className="w-4 h-4 text-red-400" />
                   <span>Made with passion</span>
@@ -365,5 +410,6 @@ export default function ServicesPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
+

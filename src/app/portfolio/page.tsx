@@ -10,65 +10,65 @@ export default function PortfolioPage() {
       id: 1,
       title: "Elegant Wedding Ceremony",
       category: "Wedding",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/portfolio/1/I1.jpg?height=400&width=600",
       description: "A beautiful outdoor wedding ceremony captured with cinematic elegance",
-      facebookUrl: "https://facebook.com/lalstudio82",
+      facebookUrl: "https://www.facebook.com/share/p/14DjEbzYzQ9/",
     },
     {
       id: 2,
       title: "Corporate Event Coverage",
       category: "Corporate",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/portfolio/2/I2.jpg?height=400&width=600",
       description: "Professional documentation of a major corporate conference",
-      facebookUrl: "https://facebook.com/lalstudio82",
+      facebookUrl: "https://www.facebook.com/share/p/12LgJcpShp8/",
     },
     {
       id: 3,
       title: "Birthday Celebration",
       category: "Birthday",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/portfolio/3/I1.jpg?height=400&width=600",
       description: "Joyful moments from a milestone birthday celebration",
-      facebookUrl: "https://facebook.com/lalstudio82",
+      facebookUrl: "https://www.facebook.com/share/p/1CL7Dcu81f/",
     },
     {
       id: 4,
       title: "Graduation Portraits",
       category: "Graduation",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/portfolio/4/I1.jpg?height=400&width=600",
       description: "Professional graduation portraits commemorating academic achievement",
-      facebookUrl: "https://facebook.com/lalstudio82",
+      facebookUrl: "https://www.facebook.com/share/p/19EXXq5WXL/",
     },
     {
       id: 5,
-      title: "Music Video Production",
-      category: "Music Video",
-      image: "/placeholder.svg?height=400&width=600",
-      description: "Creative music video with artistic direction and cinematic quality",
-      facebookUrl: "https://facebook.com/lalstudio82",
+      title: "Video Production",
+      category: "Video",
+      image: "/portfolio/Zine Logo b.png?height=400&width=600",
+      description: "Creative event video with artistic direction and cinematic quality",
+      facebookUrl: "https://www.facebook.com/share/v/1LMfLLvDV4/",
     },
     {
       id: 6,
       title: "Studio Portrait Session",
       category: "Studio",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/portfolio/6/I1.jpg?height=400&width=600",
       description: "Professional studio portraits with premium lighting setup",
-      facebookUrl: "https://facebook.com/lalstudio82",
+      facebookUrl: "https://m.facebook.com/story.php?story_fbid=pfbid02F4BPv4UfTqBB5siPmTctzZ9sXHucFp9i8s4sHK3a98oHVkgZfzRfGYJAVNw3op79l&id=100093565536482&mibextid=CDWPTG",
     },
     {
       id: 7,
-      title: "Commercial Product Shoot",
-      category: "Commercial",
-      image: "/placeholder.svg?height=400&width=600",
-      description: "High-end product photography for marketing campaigns",
-      facebookUrl: "https://facebook.com/lalstudio82",
+      title: "Sports",
+      category: "Sports",
+      image: "/portfolio/7/I1.jpg?height=400&width=600",
+      description: "Dynamic sports event coverage capturing peak action and raw emotion with cinematic precision.",
+      facebookUrl: "https://www.facebook.com/share/p/1NFTpcFNbW/",
     },
     {
       id: 8,
       title: "Event Documentation",
       category: "Event",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/portfolio/8/I2.jpg?height=400&width=600",
       description: "Comprehensive coverage of a special community event",
-      facebookUrl: "https://facebook.com/lalstudio82",
+      facebookUrl: "https://www.facebook.com/share/p/16puBTKpMh/",
     },
   ]
 
@@ -79,10 +79,13 @@ export default function PortfolioPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <Camera className="h-8 w-8 text-blue-600" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                LAL STUDIO
-              </span>
+              <Link href="/">
+                <img
+                  src="/Logo.png"
+                  alt="STUDIO ZINE Logo"
+                  className="h-25 w-auto"
+                />
+              </Link>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
@@ -181,7 +184,7 @@ export default function PortfolioPage() {
               </div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Follow Our Journey</h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Stay updated with our latest work and behind-the-scenes content. Follow LAL STUDIO on Facebook to see
+                Stay updated with our latest work and behind-the-scenes content. Follow STUDIO ZINE on Facebook to see
                 more of our photography and videography projects, client testimonials, and creative process.
               </p>
               <div className="space-y-4">
@@ -194,7 +197,7 @@ export default function PortfolioPage() {
                   asChild
                 >
                   <Link
-                    href="https://facebook.com/lalstudio82"
+                    href="https://www.facebook.com/share/196GKDHi5j/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center"
@@ -215,32 +218,40 @@ export default function PortfolioPage() {
             {/* Studio Info */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <Camera className="h-8 w-8 text-blue-400" />
-                <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  LAL STUDIO
-                </span>
+                <Link href="/">
+                <img
+                  src="/Zine Logo W.png"
+                  alt="STUDIO ZINE Logo"
+                  className="h-40 w-auto"
+                />
+                </Link>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Professional photography and videography services capturing life&apos;s most precious moments with artistic
-                vision and technical excellence.
+                Professional photography and videography services capturing
+                life&apos;s most precious moments with artistic vision and
+                technical excellence.
               </p>
               <div className="flex space-x-4">
-                <Link
-                  href="https://facebook.com/lalstudio82"
+                <a
+                  href="https://www.facebook.com/share/196GKDHi5j/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                   </svg>
-                </Link>
-                <Link
-                  href="mailto:lalstudio82@gmail.com"
+                </a>
+                <a
+                  href="mailto:contact.teamzine@gmail.com"
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
                 >
                   <Mail className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -249,32 +260,50 @@ export default function PortfolioPage() {
               <h3 className="text-xl font-bold text-white">Our Services</h3>
               <ul className="space-y-2 text-gray-300">
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Wedding Photography
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Event Coverage
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
-                    Studio Photography
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
+                    Birthday Photography
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Music Videos
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Commercial Photography
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Graphic Design
                   </Link>
                 </li>
@@ -286,27 +315,42 @@ export default function PortfolioPage() {
               <h3 className="text-xl font-bold text-white">Quick Links</h3>
               <ul className="space-y-2 text-gray-300">
                 <li>
-                  <Link href="/" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/about"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/portfolio" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/portfolio"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Portfolio
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="hover:text-blue-400 transition-colors duration-300">
+                  <Link
+                    href="/contact"
+                    className="hover:text-blue-400 transition-colors duration-300"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -319,7 +363,7 @@ export default function PortfolioPage() {
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-blue-400" />
-                  <span>lalstudio82@gmail.com</span>
+                  <span>contact.teamzine@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Clock className="w-5 h-5 text-blue-400" />
@@ -327,10 +371,6 @@ export default function PortfolioPage() {
                     <p>Mon - Sat: 9AM - 8PM</p>
                     <p>Sunday: By appointment</p>
                   </div>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Star className="w-5 h-5 text-yellow-400" />
-                  <span>8+ Years Experience</span>
                 </div>
               </div>
               <Button
@@ -347,15 +387,22 @@ export default function PortfolioPage() {
           <div className="border-t border-gray-800 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-gray-400 text-sm">
-                © 2024 LAL STUDIO. All rights reserved. | Professional Photography & Videography Services
+                © 2025 STUDIO ZINE. All rights reserved. | Professional
+                Photography & Videography Services
               </div>
               <div className="flex items-center space-x-6 text-sm text-gray-400">
-                <Link href="#" className="hover:text-blue-400 transition-colors duration-300">
+                <a
+                  href="#"
+                  className="hover:text-blue-400 transition-colors duration-300"
+                >
                   Privacy Policy
-                </Link>
-                <Link href="#" className="hover:text-blue-400 transition-colors duration-300">
+                </a>
+                <a
+                  href="#"
+                  className="hover:text-blue-400 transition-colors duration-300"
+                >
                   Terms of Service
-                </Link>
+                </a>
                 <span className="flex items-center space-x-1">
                   <Heart className="w-4 h-4 text-red-400" />
                   <span>Made with passion</span>
@@ -366,5 +413,5 @@ export default function PortfolioPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
