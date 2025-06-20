@@ -132,28 +132,3 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-  html {
-    transform: scale(0.85);
-    transform-origin: top center; /* Center on mobile */
-    width: 117.65%;
-    height: 117.65%;
-  }
-  
-  /* Prevent horizontal scrolling on mobile */
-  body {
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
-/* Very small screens */
-@media (max-width: 480px) {
-  html {
-    transform: scale(0.82); /* Slightly less scaling for very small screens */
-    width: 121.95%; /* 100% / 0.82 */
-    height: 121.95%;
-  }
-}
