@@ -71,6 +71,14 @@ export default function PortfolioPage() {
       description: "Comprehensive coverage of a special community event",
       facebookUrl: "https://www.facebook.com/share/p/16puBTKpMh/",
     },
+    {
+      id: 9,
+      title: "Portrait Photography",
+      category: "Portrait",
+      image: "/portfolio/9/I1.jpg?height=400&width=600",
+      description: "Capturing authentic expressions and timeless individuality",
+      facebookUrl: "https://m.facebook.com/story.php?story_fbid=pfbid06hj2hV1gVD5pSaXN1S9mpuKmQJKiwHnzF28jSuUE2jrUNCpSKhvqKvWkR6gBAiXSl&id=100093565536482&mibextid=ZbWKwL",
+    },
   ]
 
   return (
