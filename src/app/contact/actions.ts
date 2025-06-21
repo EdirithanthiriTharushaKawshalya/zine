@@ -18,6 +18,8 @@ export async function submitContactForm(formData: FormData) {
     return
   }
 
+  let status = false;
+
   try {
     // Initialize Resend only at runtime, not at build time
     const { Resend } = await import("resend")
@@ -25,7 +27,7 @@ export async function submitContactForm(formData: FormData) {
 
     // 1. Send confirmation email to customer
     await resend.emails.send({
-      from: "STUDIO ZINE <onboarding@resend.dev>",
+      from: "STUDIO ZINE <https://studiozine.vercel.app/>",
       to: [email],
       subject: "Thank you for contacting STUDIO ZINE!",
       html: `
@@ -75,7 +77,7 @@ export async function submitContactForm(formData: FormData) {
 
     // 2. Send notification email to studio
     await resend.emails.send({
-      from: "STUDIO ZINE Website <onboarding@resend.dev>",
+      from: "STUDIO ZINE <https://studiozine.vercel.app/>",
       to: ["contact.teamzine@gmail.com"],
       subject: `New ${service} Inquiry from ${firstName} ${lastName}`,
       html: `
@@ -168,9 +170,11 @@ export async function submitContactForm(formData: FormData) {
     })
 
     // Redirect with success message
-    redirect("/contact?success=true")
+    status = true;
   } catch (error) {
     console.error("Error sending emails:", error)
-    redirect("/contact?error=true")
   }
+
+  redirect(status ? "/contact?success=true" : "/contact?error=true");
+  
 }
